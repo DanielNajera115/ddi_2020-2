@@ -44,6 +44,17 @@
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\2DTools\Scripts\Camera2DFollow.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\KeepOnSurface.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\PlaceOnSurfaceAtStart.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TerrainQualitySettings.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\SimpleSmoothMouseLook.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\ForceGrassDistanceInEditor.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\2DTools\Scripts\CircleMoverSample.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TreeExplosion.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\PlayerHoverController.cs" />
+     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\SpawnInArea.cs" />
+     <None Include="Assets\Tom&apos;s Terrain Tools\Example Data\Terragen Sources\README.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
