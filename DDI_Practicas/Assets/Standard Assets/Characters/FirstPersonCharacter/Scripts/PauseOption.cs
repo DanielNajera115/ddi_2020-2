@@ -7,6 +7,7 @@ public class PauseOption : MonoBehaviour
 {
     private bool pauseTooggle=false;
     private Text resume,options,exit;
+    
 
 
     // Start is called before the first frame update
@@ -35,6 +36,7 @@ public class PauseOption : MonoBehaviour
                 resume.text = "";
                 options.text = "";
                 exit.text = "";
+                
             }
         }
         
