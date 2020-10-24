@@ -2,27 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
-    public class CarInteractable : MonoBehaviour
+    public class CarInteractable : Interactable
     {
         private Text interactableLabel;
 
-        private bool inZoneCollider = false;
+        private bool inZoneCollider1 = false;
         public CarUserControl rCar;
         private bool pauseTooggle=false;
         private Camera cameraFPCharacter;
         private Camera cameraCarCharacter;
         // Start is called before the first frame update
 
-        public virtual void Interact()
-        {
-            
-        } 
-        void Start()
+         
+        void Awake()
         {
             interactableLabel = GameObject.Find("InteractableMessageLbl").GetComponent<Text>();
             rCar = GetComponent<CarUserControl>();
@@ -33,10 +29,10 @@ namespace UnityStandardAssets.Vehicles.Car
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
-            
-            if(inZoneCollider){
+           
+           if(inZoneCollider1){
                 interactableLabel.text = "Presione i para interactuar";
                 Debug.Log("Yoda");
                 if (Input.GetKeyDown(KeyCode.I))
@@ -53,34 +49,25 @@ namespace UnityStandardAssets.Vehicles.Car
                         cameraCarCharacter.enabled = false;
                     }
                 }
-                Interact();
             }else{
                 interactableLabel.text = "";
             }
             
         }
-
-        void OnTriggerEnter(Collider other)
+        public override void Interact()
         {
+            base.Interact();
+            Debug.Log("Holo");
+            inZoneCollider1 = true;
             
-
-            if(!other.CompareTag("Player"))
-            {
-            return;
-            }
-            inZoneCollider = true;
             
         }
 
-        void OnTriggerExit(Collider other)
+        public override void NotInteract()
         {
-            
-
-            if(!other.CompareTag("Player"))
-            {
-            return;
-            }
-            inZoneCollider = false;
+            base.NotInteract();
+            inZoneCollider1 = false;
         }
+        
     }
 }

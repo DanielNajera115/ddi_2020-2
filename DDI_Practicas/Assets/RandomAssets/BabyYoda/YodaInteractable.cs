@@ -6,29 +6,16 @@ using UnityEngine.UI;
 using UnityEditor;
 
 
-    public class YodaInteractable : MonoBehaviour
-    {   
-        // Start is called before the first frame update
-        
+    public class YodaInteractable : Interactable
+    {
+    // Start is called before the first frame update
 
-        void Start()
-        {
-            
-        }
-        void Update()
-        {
-            
-        }
+    public override void Interact()
+    {
+        base.Interact();
+        Debug.Log("Baby yoda");
+    }
 
-        void OnTriggerEnter(Collider myCol)
-        {
-          Debug.Log("Holo");
-        }
 
-        void OnTriggerExit(Collider myCol)
-        {
-            
-
-        }
     
     }
