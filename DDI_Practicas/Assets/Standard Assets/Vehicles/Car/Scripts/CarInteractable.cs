@@ -18,7 +18,7 @@ namespace UnityStandardAssets.Vehicles.Car
         // Start is called before the first frame update
 
          
-        void Awake()
+        void Start()
         {
             interactableLabel = GameObject.Find("InteractableMessageLbl").GetComponent<Text>();
             rCar = GetComponent<CarUserControl>();
@@ -26,6 +26,8 @@ namespace UnityStandardAssets.Vehicles.Car
             cameraCarCharacter = GameObject.Find("CarCamera").GetComponent<Camera>();
             cameraFPCharacter.enabled = true;
             cameraCarCharacter.enabled = false;
+            inZoneCollider1 = false;
+            rCar.setCarOff();
         }
 
         // Update is called once per frame
@@ -34,9 +36,9 @@ namespace UnityStandardAssets.Vehicles.Car
            
            if(inZoneCollider1){
                 interactableLabel.text = "Presione i para interactuar";
-                Debug.Log("Yoda");
                 if (Input.GetKeyDown(KeyCode.I))
                 {
+                    Debug.Log("Carro prendido");
                     if(!pauseTooggle){
                         pauseTooggle=true;
                         rCar.setCarOn();
@@ -57,10 +59,7 @@ namespace UnityStandardAssets.Vehicles.Car
         public override void Interact()
         {
             base.Interact();
-            Debug.Log("Holo");
             inZoneCollider1 = true;
-            
-            
         }
 
         public override void NotInteract()

@@ -25,34 +25,25 @@ namespace UnityStandardAssets.Vehicles.Car
 
         // Update is called once per frame
         void Update()
-        {
-            
+        { 
             if(inZoneCollider){
-                Debug.Log("Yoda2");
-                
                 Interact();
             }else{
                 NotInteract();
-            }
-            
+            }   
         }
 
         void OnTriggerEnter(Collider other)
         {
-            
-
             if(!other.CompareTag("Player"))
             {
             return;
             }
-            inZoneCollider = true;
-            
+            inZoneCollider = true;   
         }
 
         void OnTriggerExit(Collider other)
         {
-            
-
             if(!other.CompareTag("Player"))
             {
             return;

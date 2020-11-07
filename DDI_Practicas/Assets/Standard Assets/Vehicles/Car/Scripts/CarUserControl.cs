@@ -9,7 +9,7 @@ namespace UnityStandardAssets.Vehicles.Car
     {
         
         private CarController m_Car; // the car controller we want to use
-        public bool carControllerIfItIsChoosed = true;
+        public bool carControllerIfItIsChoosed = false;
 
         private void Awake()
         {
