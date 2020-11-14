@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Vehicles.Car;
+using UnityStandardAssets.CrossPlatformInput;
+
 public class FoodInteractable : Interactable
 {
 
@@ -25,7 +27,7 @@ public class FoodInteractable : Interactable
     void FixedUpdate()
     {
         if(inZone){
-            if (Input.GetKeyDown(KeyCode.I)){
+            if (CrossPlatformInputManager.GetButtonDown("Fire1")){
                 inventory.Add(item);
                 Destroy(gameObject);
             }

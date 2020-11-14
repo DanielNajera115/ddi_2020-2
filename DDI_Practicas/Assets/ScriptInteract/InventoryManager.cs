@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (CrossPlatformInputManager.GetButtonDown("Fire2") )
         {
             inventoryUIPanel.SetActive(!inventoryUIPanel.activeSelf);
             UpdateUI();

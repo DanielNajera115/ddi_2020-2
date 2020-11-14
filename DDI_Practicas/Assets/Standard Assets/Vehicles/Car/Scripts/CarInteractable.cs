@@ -36,7 +36,7 @@ namespace UnityStandardAssets.Vehicles.Car
            
            if(inZoneCollider1){
                 interactableLabel.text = "Presione i para interactuar";
-                if (Input.GetKeyDown(KeyCode.I))
+                if (CrossPlatformInputManager.GetButtonDown("Fire1"))
                 {
                     Debug.Log("Carro prendido");
                     if(!pauseTooggle){

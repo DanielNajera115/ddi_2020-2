@@ -12,6 +12,7 @@ namespace UnityStandardAssets.Vehicles.Car
         
 
         private bool inZoneCollider = false;
+         public Button interactBtn;
         
         // Start is called before the first frame update
 
@@ -20,8 +21,9 @@ namespace UnityStandardAssets.Vehicles.Car
         public virtual void NotInteract(){}
         void Start()
         {
-            
+            interactBtn.enabled = false;
         }
+        
 
         // Update is called once per frame
         void Update()
