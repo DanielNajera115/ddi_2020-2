@@ -67,6 +67,7 @@
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\CompareComply\V1\Model\OriginalLabelsIn.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\NaturalLanguageUnderstanding\V1\Model\TargetedEmotionResults.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\TextToSpeech\V1\Model\Words.cs" />
+     <Compile Include="Assets\Watson\unity-sdk-4.8.0\Examples\ScriptsForPractice\CommandRecognition.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Assistant\V2\Model\MessageInput.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\CompareComply\V1\Model\ElementPair.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\SpeechToText\V1\Model\ProcessingMetrics.cs" />
@@ -515,6 +516,7 @@
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Discovery\V1\Model\CollectionUsage.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\NaturalLanguageUnderstanding\V1\Model\Feed.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Discovery\V2\Model\Completions.cs" />
+     <Compile Include="Assets\Watson\unity-sdk-4.8.0\Examples\ScriptsForPractice\Interactable.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Assistant\V2\Model\DialogSuggestionValue.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Discovery\V1\Model\PdfHeadingDetection.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Discovery\V1\Model\TestDocument.cs" />
@@ -593,8 +595,6 @@
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Assistant\V1\Model\Value.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Discovery\V1\Model\DocumentStatus.cs" />
      <Compile Include="Assets\Watson\unity-sdk-4.8.0\Scripts\Services\Assistant\V2\Model\MessageContextGlobalStateless.cs" />
-     <Compile Include="Assets\Watson\unity-sdk-4.8.0\Examples\ScriptsForPractice\CommandRecognition.cs" />
-     <Compile Include="Assets\Watson\unity-sdk-4.8.0\Examples\ScriptsForPractice\Interactable.cs" />
      <None Include="Assets\Watson\unity-sdk-4.8.0\WatsonUnitySDK.asmdef" />
      <None Include="Assets\Watson\unity-sdk-4.8.0\Editor\Help\Working\SHFBContent.xml" />
      <None Include="Assets\Watson\unity-sdk-4.8.0\NOTICES.txt" />
@@ -799,14 +799,14 @@
     <Reference Include="UnityEditor.Lumin.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="NSubstitute">
-        <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/Watson/unity-sdk-4.8.0/Plugins/NSubstitute.dll</HintPath>
-    </Reference>
     <Reference Include="websocket-sharp">
         <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/IBMSdkCore/unity-sdk-core-1.2.1/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/IBMSdkCore/unity-sdk-core-1.2.1/ThirdParty/JsonDotNet/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+        <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/Watson/unity-sdk-4.8.0/Plugins/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

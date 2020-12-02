@@ -323,14 +323,14 @@
     <Reference Include="UnityEditor.Lumin.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="NSubstitute">
-        <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/Watson/unity-sdk-4.8.0/Plugins/NSubstitute.dll</HintPath>
-    </Reference>
     <Reference Include="websocket-sharp">
         <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/IBMSdkCore/unity-sdk-core-1.2.1/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/IBMSdkCore/unity-sdk-core-1.2.1/ThirdParty/JsonDotNet/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+        <HintPath>C:/Users/DOND/Documents/ddi_repos/Watson/VoiceRecognition/Assets/Watson/unity-sdk-4.8.0/Plugins/NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
